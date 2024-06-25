@@ -7,11 +7,16 @@ var user1={
 
 var user2={
     name:"userTwo",
-    sayName:function(){
-        console.log(this.name)
-    }
+    // sayName:function(){
+    //     console.log(this.name)
+    // }
 }
 
+function sayName(){
+    console.log(this.name)
+}
 
 //using user2 object sayName property calling user1 sayName()
-user2.sayName.call(user1)
+// user2.sayName.call(user1)
+
+sayName.call(user2)
